@@ -1,0 +1,48 @@
+
+
+=============================
+=== NEXT TASK
+
+1. Add UI in Resubscribe to get to CC# input
+2. Add CC# Form UI
+3. Add Account Status link & view
+    - Subscription status: Active, Expired, Absent
+    - Subscription renew date
+    - Cancel Subscription button
+
+4. Flutter Dashboard logic to check ['subscriptionExpires'] field
+
+
+
+=============================
+=== WHAT'S READY (in debug)
+
+1. Webhook logic increments ['subscriptionExpires'] field by 1 month
+
+
+
+=============================
+=== CHECK/VERIFY SUCCESS
+
+1. Register as a Buyer via mobile client
+    - It is important that an entry in /stripeCustomers is created for the user
+        -- If this is missing, error
+
+2. As of 11/12/20202 - in Dev Screen you can go to CC# test view
+    - There if you click Charge Card (not the Form), it will succeed
+    - Verifiable in Stripe Dashboard
+
+
+=============================
+=== CHECK/VERIFY SUCCESS
+
+In Firebase Clound Functions Log
+
+1. Verify no errors
+
+
+In Stripe Dashboard
+
+1. Look at WebHook history to see what events were submitted, and which succeeded:
+https://dashboard.stripe.com/test/webhooks
+

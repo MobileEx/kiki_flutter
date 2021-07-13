@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "357111661619",
+    "firebase_url": "https://wifi-share-c1423.firebaseio.com",
+    "project_id": "wifi-share-c1423",
+    "storage_bucket": "wifi-share-c1423.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357111661619:android:ee7a24e6cab20969938f46",
+        "android_client_info": {
+          "package_name": "com.seanb.kiki.wifi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357111661619-cch01hs4ldmf5q71ijfsv1q6d4nquam0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seanb.kiki.wifi",
+            "certificate_hash": "b276f915b889ca92f0c70a599038c1e77354c5cc"
+          }
+        },
+        {
+          "client_id": "357111661619-rfoka2tlt9f6pdgl6kpo0pmr4fg5i4h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEM1GdwH0aHm9Md0CDXkhf7d5a2YkGuFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357111661619-rfoka2tlt9f6pdgl6kpo0pmr4fg5i4h5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "357111661619-u9vil5m5mt3s86jjmuq630p3m0h2tigp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.seanb.kiki.wifi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357111661619:android:81cbc1ce85ed1422938f46",
+        "android_client_info": {
+          "package_name": "uk.co.freshplay.wifiShare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357111661619-rfoka2tlt9f6pdgl6kpo0pmr4fg5i4h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEM1GdwH0aHm9Md0CDXkhf7d5a2YkGuFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357111661619-rfoka2tlt9f6pdgl6kpo0pmr4fg5i4h5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "357111661619-u9vil5m5mt3s86jjmuq630p3m0h2tigp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.seanb.kiki.wifi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357111661619:android:85f471d541489e32938f46",
+        "android_client_info": {
+          "package_name": "uk.co.freshplay.xyzzz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357111661619-vajcreo719ga496lghhpn0r5id8aigia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uk.co.freshplay.xyzzz",
+            "certificate_hash": "b276f915b889ca92f0c70a599038c1e77354c5cc"
+          }
+        },
+        {
+          "client_id": "357111661619-rfoka2tlt9f6pdgl6kpo0pmr4fg5i4h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEM1GdwH0aHm9Md0CDXkhf7d5a2YkGuFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357111661619-rfoka2tlt9f6pdgl6kpo0pmr4fg5i4h5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "357111661619-u9vil5m5mt3s86jjmuq630p3m0h2tigp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.seanb.kiki.wifi"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

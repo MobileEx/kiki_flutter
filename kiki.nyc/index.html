@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe payments</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css"
+    />
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<!--
+        <a href="/pub_subscription" class="nav__link" data-link>Public Subscription</a>
+        <hr/>
+        <a href="/subscriptions" class="nav__link" data-link>Subscriptions</a>
+-->
+    <nav id='mainNav' class="nav" style='display: none; '>
+        <a href="/" class="nav__link" data-link>Dashboard</a>
+        <a href="/become-vendor" class="nav__link" data-link>Become Vendor</a>
+        <a href="/settings" class="nav__link" data-link>Settings</a>
+        <a href="/single-subscription" class="nav__link" data-link>Subscription for Live</a>
+        <a href="/admin" class="nav__link admin-navlink" data-link style="display: none;">Manage vendors</a>
+    </nav>
+
+
+    <center id='splashPage' style='display: none; '>
+
+        <div class='.content'>
+            <img src='image/kiki_logo.jpg'
+                 style='width: 461px; height: 177px; object-fit: cover;'/>
+
+        </div>
+        <div>
+            <p class='font_7' style='line-height:1.7em;font-size:21px'>Share Wifi with your neighbors</p>
+        </div>
+        <div>
+            <iframe width='560' height='315' src='https://www.youtube.com/embed/-pDXG1OBV00'
+                    frameborder='0'
+                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                    allowfullscreen></iframe>
+        </div>
+    </center>
+
+    <div id="app">
+        <div id="userSignedIn">
+            <p>
+                User: <span id='user_email'></span>, <span id='user_id'></span>
+            </p>
+            <button type="button" id="signout" style="zdisplay: none;">
+                Sign out
+            </button>
+        </div>
+
+
+        <section id="firebaseui-auth-container"></section>
+        <div id="loader">Loading &hellip;</div>
+        <section id="content" style="display: none;"></section>
+    </div>
+
+
+    <script>
+        function setViewNav(firebaseUser) {
+            console.log('test1() Runs, document.location.href: ' + document.location.href);
+            console.log('test1() Runs, window.location.pathname: ' + window.location.pathname);
+
+            if (firebaseUser) {
+
+                console.log('firebaseUser TRUE');                
+                document.getElementById('splashPage').style.display = 'none';
+                document.getElementById('mainNav').style.display = 'block';
+            }
+            else {
+                console.log('firebaseUser FALSE');
+                document.getElementById('splashPage').style.display = 'block';
+                document.getElementById('mainNav').style.display = 'none';
+
+                // temp
+                // document.getElementById('splashPage').style.display = 'none';
+                // document.getElementById('mainNav').style.display = 'block';
+
+                if (window.location.pathname !== '/') {
+
+                   document.location.href="/"; 
+                }
+                
+
+            }
+
+        }
+
+    </script>
+
+    <!-- Import and configure the Firebase SDK -->
+    <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+    <!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+    <script src="/__/firebase/7.24.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.24.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.24.0/firebase-firestore.js"></script>
+    <script src="/__/firebase/7.24.0/firebase-functions.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+    <!-- Import Firebase UI -->
+    <script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.js"></script>
+
+    <!-- Stripe's JS library -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script type="module" src="/js/index.js"></script>
+</body>
+</html>
